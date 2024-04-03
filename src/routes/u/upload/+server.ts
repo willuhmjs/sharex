@@ -13,7 +13,7 @@ export const POST: RequestHandler = async ({ request }) => {
     const rawURL = formData.get("url");
     try {
         const url = new URL(rawURL as string);
-        const tail = Math.random().toString(36).substring(2);
+        const tail = Math.random().toString(36).substring(2, 8);
         keyv.set(tail, url.toString());
         return new Response(new URL(request.url).origin + '/u/' + tail, { status: 201 })
 
