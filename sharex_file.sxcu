@@ -6,7 +6,7 @@
   "RequestURL": "http://localhost:4173/f/upload",
   "Body": "MultipartFormData",
   "Arguments": {
-    "api_key": "API_KEY"
+    "api_key": "YOUR_API_KEY"
   },
   "FileFormName": "file",
   "URL": "{response}"
