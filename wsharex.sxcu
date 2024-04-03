@@ -1,0 +1,13 @@
+﻿{
+  "Version": "16.0.1",
+  "Name": "wsharex",
+  "DestinationType": "ImageUploader, FileUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://localhost:4173/f/upload",
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "api_key": "API_KEY"
+  },
+  "FileFormName": "file",
+  "URL": "{response}"
+}
