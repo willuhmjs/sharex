@@ -9,7 +9,7 @@ export const POST: RequestHandler = async ({ request }) => {
     const api_key = formData.get('api_key');
     if (api_key !== API_KEY) return new Response("Unauthorized", { status: 401 });
     const file: File = (formData.get('file') as File);
-    const fileName = `${Date.now()}.${extension(file.type)}`
+    const fileName = `${file.name}.${extension(file.type)}`
     fs.outputFileSync(`./files/${fileName}`, Buffer.from(await file.arrayBuffer()));
     return new Response(new URL(request.url).origin + '/f/' + fileName, { status: 201 })
 };
