@@ -1,2 +1,2 @@
 # sharex
- sharex image and text uploader
+sharex image and file uploader
