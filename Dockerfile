@@ -8,9 +8,8 @@ RUN npm install
 
 COPY . .
 
-ENV PORT=2121
-
-EXPOSE ${PORT}
+EXPOSE 4173
 
 RUN npm run build
-CMD ["npm", "run", "preview", "--", "--port=$PORT"]
+
+CMD ["npm", "run", "preview", "--", "--host"]
